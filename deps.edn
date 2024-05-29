@@ -1,9 +1,10 @@
 {:paths
  ["src" "resources"]
 
-
  :deps
- {org.firebirdsql.jdbc/jaybird {:mvn/version "4.0.9.java8"}}
+ {org.firebirdsql.jdbc/jaybird {:mvn/version "4.0.9.java8"}
+  com.github.seancorfield/honeysql {:mvn/version "2.6.1126"} ;; Usando a versão do Metabase
+  clojure.java-time/clojure.java-time {:mvn/version "1.4.2"}} ;; Usando a versão do Metabase
 
  ;; build the driver with clojure -X:build
  :aliases
